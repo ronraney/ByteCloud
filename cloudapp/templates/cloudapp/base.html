@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The Byte Cloud App</title>
+    <meta name="description" content="Byte Cloud">
+    <meta name="author" content="Ron Raney">
+
+    <link rel="stylesheet" href="{% static 'css/cloudapp.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="page-header">
+        <h1><a href="/">Byte Cloud App</a></h1>
+    </div>
+    <div class="content">
+            <div>
+                <div>
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+    </div>    
+</body>
+</html>
+

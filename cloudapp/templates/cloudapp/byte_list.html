@@ -1,0 +1,22 @@
+{% extends 'cloudapp/base.html' %}
+
+{% block content %}
+    
+    <div class="total">
+            <h2>Total number of words and phrases entered: <span class="total_bytes">{{ total_bytes }}</span></h2>
+    </div>
+    <hr>
+    {% for byte in each_bytes %}
+        <div class="byte">
+            <span class="byte_text">{{ byte.text }}</span>
+            <button type="button">{{ byte.c }}</button>
+        </div>
+    {% endfor %}
+    <hr>
+    <!--{% for byte in bytes %}
+        <div class="byte">
+            <h2>{{ byte.text }}</h2>
+        </div>
+    {% endfor %}-->
+{% endblock %}
+
