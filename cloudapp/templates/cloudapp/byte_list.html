@@ -1,15 +1,21 @@
 {% extends 'cloudapp/base.html' %}
 
 {% block content %}
-    
+    <form class="wordForm" action="" method="post">
+        <div class="form-group">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        </div>
+    </form>
     <div class="total">
-            <h2>Total number of words and phrases entered: <span class="total_bytes">{{ total_bytes }}</span></h2>
+            <h2>Total number of words and phrases entered: <button class="btn-primary total_bytes">{{ total_bytes }}</button></h2>
     </div>
-    <hr>
+
     {% for byte in each_bytes %}
         <div class="byte">
             <span class="byte_text">{{ byte.text }}</span>
-            <button type="button">{{ byte.c }}</button>
+            <button class="button btn-default" type="button">{{ byte.c }}</button>
         </div>
     {% endfor %}
     <hr>

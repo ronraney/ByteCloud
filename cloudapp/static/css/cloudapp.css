@@ -9,9 +9,9 @@
     font-size: 36pt;
     text-decoration: none;
 }
-
-.content {
-    
+.button {
+    margin-left: 10px;
+    font-size: 120%;
 }
 .total {
     background-color: #45A4BA;
@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
 }
 
 .byte {
-    margin-left: 20px;
+    margin: 10px 0px 5px 20px;
 }
 
 .byte h2 {
@@ -55,9 +55,9 @@ h1, h2, h3, h4 {
     font-size: 200%;
 }    
 .total_bytes {
-    text-shadow: 3px 3px black;
     color: white;
 }
 
-    
-    
+.wordForm {
+    margin: 30px;
+}
