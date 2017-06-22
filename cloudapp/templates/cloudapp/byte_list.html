@@ -4,7 +4,7 @@
     <form class="form-inline wordForm" action="" method="post">
         <div class="form-group">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ form }}
             <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
         </div>
     </form>
