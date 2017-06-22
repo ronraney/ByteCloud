@@ -61,3 +61,6 @@ h1, h2, h3, h4 {
 .wordForm {
     margin: 30px;
 }
+.wordForm .form-group .btn {
+    font-size: 125%;
+}

@@ -1,7 +1,7 @@
 {% extends 'cloudapp/base.html' %}
 
 {% block content %}
-    <form class="wordForm" action="" method="post">
+    <form class="form-inline wordForm" action="" method="post">
         <div class="form-group">
             {% csrf_token %}
             {{ form.as_p }}
